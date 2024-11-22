@@ -1,8 +1,8 @@
 {
   "$schema": "https://schema.tauri.app/config/2",
-  "productName": "system-info-monitor",
+  "productName": "Nimbus",
   "version": "0.1.0",
-  "identifier": "com.sim.app",
+  "identifier": "com.nimbus.app",
   "build": {
     "beforeDevCommand": "npm run dev",
     "devUrl": "http://localhost:1420",
@@ -13,16 +13,24 @@
     "windows": [
       {
         "label": "main",
-        "title": "system-info-monitor",
-        "width": 800,
-        "height": 600,
-        "visible": false,
-        "transparent": true
+        "title": "Nimbus",
+        "width": 375,
+        "height": 195,
+        "decorations": false,
+        "alwaysOnTop": true,
+        "transparent": true,
+        "shadow": true,
+        "maximizable": false,
+        "resizable": false,
+        "devtools": false,
+        "dragDropEnabled": false,
+        "fullscreen": false
       }
     ],
     "trayIcon": {
       "id": "main",
-      "iconPath": "icons/icon.ico"
+      "iconPath": "icons/icon.ico",
+      "menuOnLeftClick": true
     },
     "macOSPrivateApi": true,
     "security": {
